@@ -1,0 +1,32 @@
+#root {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+	min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.App {
+	max-width: 1280px;
+  width: 100%;
+  flex-grow: 1;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.mode {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.mode_dark {
+  background-color: black;
+}
+
+.mode_dark h1 {
+	color: white;
+}

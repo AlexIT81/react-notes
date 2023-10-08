@@ -1,0 +1,34 @@
+.add-note {
+  background-color: #67d7cc;
+}
+
+.add-note__save-button {
+	background-color: #e1e1e1;
+	border: none;
+	border-radius: 15px;
+	padding: 5px 5px 5px 5px;
+  font-size: 11px;
+  transition: .3s linear;
+}
+
+.add-note__save-button:hover {
+	background-color: #ededed;
+	cursor: pointer;
+}
+
+.note__simbols {
+  font-size: 11px;
+}
+
+.add-note__textarea {
+	resize: none;
+	background-color: #67d7cc;
+  border: none;
+  outline: none;
+}
+
+.add-note__textarea:focus {
+  border: 1px #333232 solid;
+  border-radius: 5px;
+	outline: none;
+}

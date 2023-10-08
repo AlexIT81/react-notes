@@ -1,0 +1,24 @@
+.note {
+	background-color: #e6e08f;
+	border-radius: 10px;
+	padding: 10px;
+	height: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+}
+
+.note__span {
+  overflow-y: scroll;
+}
+
+.note__footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.note__delete-button {
+	cursor: pointer;
+}
