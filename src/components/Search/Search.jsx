@@ -3,9 +3,10 @@ import './Search.css';
 import { MdSearch } from 'react-icons/md';
 
 export const Search = ({ onSearchQueryChange }) => {
+
   return (
     <form className='search'>
-      <MdSearch className='search__icon' t />
+      <MdSearch className='search__icon' />
       <input
         className='search__input'
         type='text'

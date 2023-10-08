@@ -1,8 +1,8 @@
 {
+  "homepage": "https://alexit81.github.io/react-notes/",
   "name": "react-notes",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AlexIT81.github.io/react-notes",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

@@ -11,27 +11,19 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   function checkSavedNotes() {
-    const savedNotes = JSON.parse(localStorage.notes);
-    if (savedNotes) {
-      return savedNotes;
-    } else {
-      return [];
-    }
+    let savedNotes = []
+    if (localStorage.notes) {
+       savedNotes = JSON.parse(localStorage.notes);
+      }
+    return savedNotes;
   }
-  // useEffect(() => {
-  //   const savedNotes = JSON.parse(localStorage.notes);
-  //   if (savedNotes) {
-  //     console.log(savedNotes);
-  //     setNotes(savedNotes);
-  //   }
-  // }, []);
 
   useEffect(() => {
     localStorage.setItem('notes', JSON.stringify(notes));
   }, [notes]);
 
   const handleSearchQueryChange = (text) => {
-    if (text) {
+    if (text.toString()) {
       setSearchQuery(text);
     } else {
       setSearchQuery('');
@@ -65,7 +57,7 @@ function App() {
         <Search onSearchQueryChange={handleSearchQueryChange} />
         <NotesList
           notes={notes.filter((note) =>
-            note.text.toLocaleLowerCase().includes(searchQuery)
+            note.text.toLowerCase().includes(searchQuery)
           )}
           onAddNote={handleAddNote}
           onDelete={handleDelete}
