@@ -28,6 +28,7 @@ export const AddNote = ({ onAddNote }) => {
         onChange={hadleChange}
         maxLength={characterLimit}
         value={noteText}
+        disabled={false}
       ></textarea>
       <div className='note__footer'>
         <span className='note__simbols'>{characterLimit - noteText.length} символов осталось</span>

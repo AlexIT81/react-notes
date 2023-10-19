@@ -46,6 +46,11 @@ function App() {
     setNotes([...notes, newNote]);
   };
 
+  const handleEditNote = (id, text) => {
+    setNotes(notes.map((note) => note.id === id ? {...note, text} : note));
+
+  }
+
   const handleDelete = (id) => {
     setNotes(notes.filter((note) => note.id !== id));
   };
@@ -61,6 +66,7 @@ function App() {
           )}
           onAddNote={handleAddNote}
           onDelete={handleDelete}
+          onEdit={handleEditNote}
         />
       </div>
     </div>

@@ -13,7 +13,21 @@
   overflow: hidden auto;
 }
 
+.note__textarea {
+  background-color: transparent;
+  overflow: hidden auto;
+  border: 0;
+}
+
+.note__textarea:focus {
+  border: 1px #333232 solid;
+  border-radius: 5px;
+	outline: none;
+  resize: none;
+}
+
 .note__footer {
+  height: 22px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -21,4 +35,8 @@
 
 .note__delete-button {
 	cursor: pointer;
+}
+
+.note__edit-button {
+  cursor: pointer;
 }
