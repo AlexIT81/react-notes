@@ -17,13 +17,13 @@
   background-color: transparent;
   overflow: hidden auto;
   border: 0;
+  resize: none;
 }
 
 .note__textarea:focus {
   border: 1px #333232 solid;
   border-radius: 5px;
 	outline: none;
-  resize: none;
 }
 
 .note__footer {
